@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tractors for Rent in Pune</title>
+    <link rel="stylesheet" href="equip.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Farmers' Platform</h1>
+            <nav>
+                <ul>
+                    <li><a href="/dashboard/home.html">Home</a></li>
+                    <li><a href="/marketplace/index.html">Marketplace</a></li>
+                    <li><a href="index.html">Machinery Rental</a></li>
+                    <li><a href="/crop-advice/index.html">Crop Advice</a></li>
+                    <li><a href="/weather-map/weather-map.html">Weather</a></li>
+                    <li><a href="/dashboard/about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="product-page">
+        <div class="product-carousel">
+            <button class="carousel-control prev">&#10094;</button>
+            <img src="https://geartap.in/api/image/7c95d4b2-a7e4-426d-aa96-35f4fc2d5075.webp" alt="Tractor Image" id="productImage">
+            <button class="carousel-control next">&#10095;</button>
+        </div>
+
+        <div class="product-details">
+            <nav class="breadcrumb">
+                <a href="#">Home</a> &gt; <a href="#">Tractors</a>
+            </nav>
+            <h1>Tractors for rent in Pune</h1>
+            <div class="location">
+                <span>Jobsite Location: <strong>Pune</strong> (<a href="#" class="change-location">Change</a>)</span>
+            </div>
+            <div class="pricing">
+                <div class="price-option">
+                    <span>Daily</span>
+                    <span class="price">₹3542</span>
+                </div>
+                <div class="price-option">
+                    <span>Weekly</span>
+                    <span class="price">₹17708</span>
+                </div>
+                <div class="price-option">
+                    <span>Monthly</span>
+                    <span class="price">₹56667</span>
+                </div>
+            </div>
+            <p class="notice">Prices may vary based on location & other factors. Request quote for an accurate price.</p>
+            <div class="variants">
+                <h3>Variants:</h3>
+                <div class="variant-options">
+                    <button class="variant">21 - 40 HP</button>
+                    <button class="variant">41 - 50 HP</button>
+                    <button class="variant">50 - 75 HP</button>
+                    <button class="variant">75 - 100 HP</button>
+                    <button class="variant">100+ HP</button>
+                </div>
+            </div>
+            <div class="quantity-selector">
+                <h3>Quantity</h3>
+                <button class="quantity-btn" onclick="decreaseQuantity()">-</button>
+                <input type="text" id="quantityInput" value="1" readonly>
+                <button class="quantity-btn" onclick="increaseQuantity()">+</button>
+            </div>
+            <button class="add-to-cart">Add to cart</button>
+        </div>
+    </div>
+    <script src="equip.js"></script>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Farmers' Platform. All rights reserved.</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>

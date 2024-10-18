@@ -1,0 +1,291 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Ensure that body takes up the full height */
+html, body {
+    height: 100%;
+    background-color: #fffcfc; /* Match with the home page background color */
+}
+
+/* Main container should take the remaining space between header and footer */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    flex: 1; /* Ensures it grows to fill the space */
+}
+
+/* Layout styling to ensure the page is stretched */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styling */
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+    width: 100%; /* Ensure header stretches the full width */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Keep header on top of other content */
+}
+
+header h1 {
+    float: left;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 10px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Add padding-top to the body content to ensure it doesn't hide behind the fixed header */
+.product-page {
+    display: flex;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 80px auto 50px auto; /* Add margin-top to avoid overlap with the fixed header */
+    padding-bottom: 20px; /* Add space between the content and footer */
+}
+
+/* Footer should always stick to the bottom */
+footer {
+    background: #35424a;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: auto;
+    width: 100%; /* Ensure footer stretches the full width */
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+footer ul {
+    margin: 10px 0;
+    padding: 0;
+    list-style: none;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Product Page Layout */
+.product-page {
+    display: flex;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+/* Carousel */
+.product-carousel {
+    position: relative;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Similar shadow as home page sections */
+}
+
+.product-carousel img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.carousel-control {
+    position: absolute;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #e8491d; /* Button color matches the theme */
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+/* Product Details */
+.product-details {
+    width: 50%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow to match home page sections */
+}
+
+.breadcrumb a {
+    color: #555;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #35424a; /* Match header color with home page */
+}
+
+.location {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.change-location {
+    color: #007bff;
+    cursor: pointer;
+}
+
+/* Pricing */
+.pricing {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.price-option {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    flex: 1;
+}
+
+.price {
+    display: block;
+    font-weight: bold;
+    color: #28a745; /* Green color for price visibility */
+}
+
+/* Notice */
+.notice {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+/* Variants */
+.variants h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.variant-options {
+    display: flex;
+    gap: 10px;
+}
+
+.variant {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.variant:hover {
+    background-color: #e8491d; /* Match hover color with home page buttons */
+    color: #fff;
+}
+
+/* Quantity Selector */
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.quantity-selector h3 {
+    font-size: 18px;
+}
+
+.quantity-btn {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+    color: #35424a; /* Match button color with home page */
+}
+
+#quantityInput {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+/* Add to Cart Button */
+.add-to-cart {
+    background-color: #e8491d; /* Match with home page button style */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #d4411b;
+}

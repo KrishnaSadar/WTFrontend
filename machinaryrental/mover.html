@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riding Mower for Rent</title>
+    <link rel="stylesheet" href="mover.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Farmers' Platform</h1>
+            <nav>
+                <ul>
+                    <li><a href="/dashboard/home.html">Home</a></li>
+                    <li><a href="/marketplace/index.html">Marketplace</a></li>
+                    <li><a href="index.html">Machinery Rental</a></li>
+                    <li><a href="/crop-advice/index.html">Crop Advice</a></li>
+                    <li><a href="/weather-map/weather-map.html">Weather</a></li>
+                    <li><a href="/dashboard/about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<section class="product-page">
+    <div class="container">
+        <!-- Image Section -->
+        <div class="image-gallery">
+            <div class="slider">
+                <button class="prev">&#10094;</button>
+                <img src="https://geartap.in/api/image/ca58938c-98e4-4b92-8fb9-d610e6c843c5.webp" alt="Riding Mower" id="current-image">
+                <button class="next">&#10095;</button>
+            </div>
+        </div>
+
+        <!-- Details Section -->
+        <div class="product-details">
+            <h1>Riding Mower for rent in Pune</h1>
+            <p class="location">Jobsite Location: <span>Pune</span> (<a href="#">Change</a>)</p>
+
+            <div class="price-options">
+                <div class="price-item">Daily <span class="price">₹1417</span></div>
+                <div class="price-item">Weekly <span class="price">₹7083</span></div>
+                <div class="price-item">Monthly <span class="price">₹22667</span></div>
+            </div>
+            <p class="price-note">Prices may vary based on location & other factors. Request quote for an accurate price.</p>
+
+            <!-- Riding Mower Variants -->
+            <div class="variants">
+                <h4>Riding Mower Variants:</h4>
+                <div class="variant-buttons">
+                    <button class="variant">30-50 cm</button>
+                    <button class="variant">50-70 cm</button>
+                    <button class="variant">70-90 cm</button>
+                    <button class="variant">90-120 cm</button>
+                </div>
+            </div>
+
+            
+
+            <div class="quantity-section">
+                <h4>Quantity</h4>
+                <div class="quantity-selector">
+                    <button class="decrease">-</button>
+                    <input type="number" value="1" id="quantity" min="1">
+                    <button class="increase">+</button>
+                </div>
+            </div>
+
+            <button class="add-to-cart">Add to cart</button>
+        </div>
+    </div>
+</section>
+
+<script src="mover.js"></script>
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Farmers' Platform. All rights reserved.</p>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+</footer>
+
+</body>
+</html>

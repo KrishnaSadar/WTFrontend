@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Agri-Connect</title>
+    <link href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" rel="stylesheet">
+    <link href="login.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong class="website-name">Agri-Connect</strong></li>
+        </ul>
+    </nav>
+
+    <div class="container center-box">
+        <div class="form-content-container">
+            <h2>Sign Up</h2>
+            <p>Create your Agri-Connect account</p>
+            <form id="signupForm">
+                <label for="signupName">Full Name</label>
+                <input type="text" id="signupName" name="signupName" placeholder="Enter your full name" required>
+                
+                <label for="signupEmail">Email</label>
+                <input type="email" id="signupEmail" name="signupEmail" placeholder="Enter your email" required>
+
+                <label for="signupMobile">Mobile Number</label>
+                <input type="tel" id="signupMobile" name="signupMobile" placeholder="Enter your mobile number" pattern="[0-9]{10}" required>
+                
+                <label for="signupAddress">Address</label>
+                <textarea id="signupAddress" name="signupAddress" placeholder="Enter your address" rows="3" required></textarea>
+                
+                <label for="signupPassword">Password</label>
+                <input type="password" id="signupPassword" name="signupPassword" placeholder="Create a password" required>
+
+                <p id="errorMessage" style="color: red; display: none;"></p> <!-- Error message display -->
+                
+                <button type="submit">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="index.html">Login</a></p>
+        </div>
+    </div>
+
+    <script>
+        async function signUpUser(event) {
+            event.preventDefault(); // Prevent the form from submitting the traditional way
+
+            // Capture form data
+            const name = document.getElementById('signupName').value;
+            const email = document.getElementById('signupEmail').value;
+            const mobileNo = document.getElementById('signupMobile').value;
+            const address = document.getElementById('signupAddress').value;
+            const password = document.getElementById('signupPassword').value;
+            const errorMessage = document.getElementById('errorMessage');
+
+            // POST request to the API
+            try {
+                const response = await fetch('https://w-tbackend.vercel.app/api/users', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        name: name,
+                        email: email,
+                        mobileNo: parseInt(mobileNo), // Convert to number
+                        address: address,
+                        password: password
+                    })
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    // Redirect to dashboard.html if success
+                    window.location.href = "/dashboard/home.html";
+                } else {
+                    // Display the error message
+                    errorMessage.textContent = data.message || 'An error occurred. Please try again.';
+                    errorMessage.style.display = 'block';
+                }
+            } catch (error) {
+                // Handle unexpected errors
+                errorMessage.textContent = 'An error occurred while submitting the form. Please try again.';
+                errorMessage.style.display = 'block';
+            }
+        }
+
+        document.getElementById('signupForm').addEventListener('submit', signUpUser);
+    </script>
+</body>
+</html>

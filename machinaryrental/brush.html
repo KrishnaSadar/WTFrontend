@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brush Cutter for Rent in Pune</title>
+    <link rel="stylesheet" href="brush.css">
+    <script src="brush.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Farmers' Platform</h1>
+            <nav>
+                <ul>
+                    <li><a href="/dashboard/home.html">Home</a></li>
+                    <li><a href="/marketplace/index.html">Marketplace</a></li>
+                    <li><a href="index.html">Machinery Rental</a></li>
+                    <li><a href="/crop-advice/index.html">Crop Advice</a></li>
+                    <li><a href="/weather-map/weather-map.html">Weather</a></li>
+                    <li><a href="/dashboard/about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="product-container">
+        <div class="product-image">
+            <img id="productImage" src="https://geartap.in/api/image/40f948da-9bf9-4a73-a362-6f637eb569a5.webp" alt="Brush Cutter">
+        </div>
+        <div class="product-details">
+            <h2>Brush Cutter for rent in Pune</h2>
+            <p>Jobsite Location: <span id="location">Pune</span> (<a href="#">Change</a>)</p>
+            <div class="pricing">
+                <div class="price-option">
+                    <span>Daily</span>
+                    <p class="price" id="dailyPrice">₹401</p>
+                </div>
+                <div class="price-option">
+                    <span>Weekly</span>
+                    <p class="price" id="weeklyPrice">₹2005</p>
+                </div>
+                <div class="price-option">
+                    <span>Monthly</span>
+                    <p class="price" id="monthlyPrice">₹6417</p>
+                </div>
+            </div>
+            <p class="disclaimer">Prices may vary based on location & other factors. Request a quote for an accurate price.</p>
+            <div class="variant-options">
+                <div class="variant" onclick="changeVariant('2-10')">2-10 inch</div>
+                <div class="variant" onclick="changeVariant('10-16')">10-16 inch</div>
+                <div class="variant" onclick="changeVariant('16-26')">16-26 inch</div>
+            </div>
+            <div class="quantity">
+                <button class="quantity-btn" onclick="decreaseQuantity()">-</button>
+                <input type="text" id="quantityInput" value="1" readonly>
+                <button class="quantity-btn" onclick="increaseQuantity()">+</button>
+            </div>
+            <button class="add-to-cart">Add to cart</button>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Farmers' Platform. All rights reserved.</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fffcfc;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
+
+header h1 {
+    float: left;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 10px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center; /* Center the heading */
+}
+
+form {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align the items */
+}
+
+label {
+    font-size: 18px;
+    margin: 10px 0; /* Space between label and input */
+}
+
+input, textarea {
+    padding: 10px;
+    font-size: 16px;
+    width: 80%; /* Increased width for better appearance */
+    margin: 10px 0;
+    border: 1px solid #ccc; /* Add border for inputs */
+    border-radius: 5px; /* Rounded corners for inputs */
+}
+
+textarea {
+    resize: none; /* Prevent resizing of textarea */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #e8491d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #d4411b;
+}
+
+footer {
+    background: #35424a;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 0;
+    flex-shrink: 0; /* Prevent footer from shrinking */
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+footer ul {
+    margin: 10px 0;
+    padding: 0;
+    list-style: none;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}

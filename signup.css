@@ -1,0 +1,219 @@
+html {
+    height: 2000px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.container {
+    height: 500px;
+}
+
+.form-content-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(69, 207, 113, 0.293);
+    height: auto;
+    width: 460px;
+    padding: 50px;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.heading-container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.login-heading {
+    margin: 0;
+    width: 350px;
+    text-align: center;
+    line-height: 1.0;
+}
+
+.heading-container h2 span {
+    font-size: 36px;
+}
+
+.container-of-buttons {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 120px;
+}
+
+.button-container { 
+    display: flex;
+    position: relative;
+    min-height: 40px;
+    justify-content: center;
+    align-items: center; 
+}
+
+.button {
+    display: inline-block;
+    position: absolute;
+    height: 32px;
+    width: 200px;
+    font-size: 16px;
+    color: rgba(2, 45, 28, 0.999);
+    background-color:rgba(69, 207, 113, 0.24);
+    border: 1px solid rgba(25, 73, 40, 0.932);
+    border-radius: 5px;
+}
+
+.email-input, .password-input {
+    width: 100%;
+    height: 35px;
+    border: 1.5px solid rgb(60, 60, 60);
+    border-radius: 4px;
+    margin-top: 5px;
+    text-indent: 10px;
+}
+
+input:focus {
+    outline: none;
+    border: 1.5px solid rgb(60, 60, 60);
+}
+
+input::placeholder {
+    font-size: 14px;   
+    color: rgb(113, 112, 112);
+}
+
+.remember-me-and-forgot-password-container {
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.remember-me-container {
+    display: flex;
+    flex-direction: row;
+    width: 120px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.radio-button {
+    margin-top: 5px;
+    size: 25px;
+}
+
+.forgot-password-link {
+    text-decoration: none;
+}
+
+.login-button-container {
+    display: flex;
+    position: relative;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-button {
+    display: flex;
+    position: absolute;
+    width: 300px;
+    height: 35px;
+    background-color: rgba(69, 207, 113, 0.688);
+    border: 1px solid rgba(23, 69, 38, 0.932);
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+} 
+
+.extra-content-container {
+    display: flex;
+    position: relative;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.extra-content-container p {
+    text-align: center;
+    line-height: 1.2;
+    margin : 0;
+}
+
+.google-login-container {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.google-login-container a {
+    text-decoration: none;
+    color: black;
+}
+
+.google-login-container a:hover {
+    color: black;
+}
+
+.google-heading-logo-container {
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    width: 130px;
+    background-color: white;
+    border: 1.5px solid rgb(60, 60, 60);
+    border-radius: 4px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.google-heading-logo-container:hover {
+    background-color: rgb(245, 242, 242);
+}
+
+.google-name {
+    display: flex;
+    padding: 10px;
+
+}
+
+.google-image-container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 60px;
+}
+
+.google-image-container img {
+    background-color: white;
+    border-radius: 80px;
+    height: 35px;
+    width: 35px;
+    margin-right: 0px;
+}
+
+
+.create-account-link-container {
+    display: flex;
+    position: relative;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.create-account-link-container p {
+    text-align: center;
+    line-height: 1.2;
+    margin : 0;
+}
+
+.sign-up-link {
+    text-decoration: none;
+}

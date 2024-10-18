@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace - Farmers' Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Farmers' Platform</h1>
+            <nav>
+                <ul>
+                    <li><a href="/dashboard/home.html">Home</a></li>
+                    <li><a href="/marketplace/index.html">Marketplace</a></li>
+                    <li><a href="/machinaryrental/index.html">Machinery Rental</a></li>
+                    <li><a href="/crop-advice/index.html">Crop Advice</a></li>
+                    <li><a href="/weather/weather.html">Weather</a></li>
+                    <li><a href="/dashboard/about.html">About</a></li>
+                    <li><a href="/dashboard/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Marketplace Section -->
+    <section class="marketplace">
+        <div class="container">
+            <h2>Marketplace</h2>
+
+            <!-- Filtering Section -->
+            <div class="filter-section">
+                <label for="stateFilter">Select State:</label>
+                <select id="stateFilter">
+                    <option value="">-- Select State --</option>
+                    <!-- State options will be populated via JavaScript -->
+                </select>
+
+                <label for="districtFilter">Select District:</label>
+                <select id="districtFilter" disabled>
+                    <option value="">-- Select District --</option>
+                    <!-- District options will be populated based on state selection -->
+                </select>
+
+                <label for="commodityFilter">Select Commodity:</label>
+                <select id="commodityFilter" disabled>
+                    <option value="">-- Select Commodity --</option>
+                    <!-- Commodity options will be populated based on state and district selection -->
+                </select>
+
+                <button id="filterButton">Filter</button>
+            </div>
+
+            <!-- Product Table -->
+            <table class="product-table">
+                <thead>
+                    <tr>
+                        <th>State</th>
+                        <th>District</th>
+                        <th>Market</th>
+                        <th>Commodity</th>
+                        <th>Variety</th>
+                        <th>Grade</th>
+                        <th>Arrival Date</th>
+                        <th>Min Price</th>
+                        <th>Max Price</th>
+                        <th>Modal Price</th>
+                    </tr>
+                </thead>
+                <tbody id="productList">
+                    <!-- Product data will be loaded here via JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Farmers' Platform. All rights reserved.</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

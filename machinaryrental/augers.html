@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5-10 HP, Augers for Rent in Pune</title>
+    <link rel="stylesheet" href="augers.css">
+    <script src="augers.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Farmers' Platform</h1>
+            <nav>
+                <ul>
+                    <li><a href="/dashboard/home.html">Home</a></li>
+                    <li><a href="/marketplace/index.html">Marketplace</a></li>
+                    <li><a href="index.html">Machinery Rental</a></li>
+                    <li><a href="/crop-advice/index.html">Crop Advice</a></li>
+                    <li><a href="/weather-map/weather-map.html">Weather</a></li>
+                    <li><a href="/dashboard/about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="product-container">
+        <div class="product-image">
+            <img id="augerImage" src="https://geartap.in/api/image/b9c870a6-fa3e-4f1e-9525-7a7dc317977f.webp" alt="Auger">
+        </div>
+        <div class="product-details">
+            <h2> Augers for rent in Pune</h2>
+            <p>Augers</p>
+            <p>Jobsite Location: <span id="location">Pune</span> (<a href="#">Change</a>)</p>
+            <div class="pricing">
+                <div class="price-option">
+                    <span>Daily</span>
+                    <p class="price" id="dailyPrice">₹4479</p>
+                </div>
+                <div class="price-option">
+                    <span>Weekly</span>
+                    <p class="price" id="weeklyPrice">₹22396</p>
+                </div>
+                <div class="price-option">
+                    <span>Monthly</span>
+                    <p class="price" id="monthlyPrice">₹71667</p>
+                </div>
+            </div>
+            <p class="disclaimer">Prices may vary based on location & other factors. Request a quote for an accurate price.</p>
+            <div class="variant-options">
+                <div class="variant" onclick="changeVariant('5-10')">5-10 HP</div>
+                <div class="variant" onclick="changeVariant('10+')">10 HP and above</div>
+                <div class="variant" onclick="changeVariant('20+')">20 HP and above</div>
+            </div>
+            <div class="quantity">
+                <button class="quantity-btn" onclick="decreaseQuantity()">-</button>
+                <input type="text" id="quantityInput" value="1" readonly>
+                <button class="quantity-btn" onclick="increaseQuantity()">+</button>
+            </div>
+            <button class="add-to-cart">Add to cart</button>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Farmers' Platform. All rights reserved.</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
