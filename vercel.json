@@ -2,14 +2,15 @@
     "version": 2,
     "builds": [
         {
-            "src": "/*",
+            "src": "WTfrontend//*",
             "use": "@vercel/static"
         }
     ],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "/$1"
+            "dest": "/WTfrontend/$1"
         }
-    ]
+    ],
+    "cleanUrls": true
 }
